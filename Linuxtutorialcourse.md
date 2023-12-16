@@ -20,6 +20,7 @@ Linux commands :
  * Cp     : Copying a file
  * curl   : it is a command-line tool and library for making HTTP requests. It stands for "Client for URLs" or "cURL."
  * echo
+ * file   : Show the type of the file
  * history: shows all command u typed from the start
  * ls
  * ls -a  : all files
