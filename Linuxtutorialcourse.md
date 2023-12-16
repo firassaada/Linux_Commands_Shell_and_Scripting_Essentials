@@ -18,25 +18,45 @@ Linux commands :
  *Bc      : Calculator 
  * Cat    : Print file content
  * Cp     : Copying a file
+ * $ cp -i: Check if a file/directory could be overwritten 
+ * cp -r  : Copying a directory
  * curl   : it is a command-line tool and library for making HTTP requests. It stands for "Client for URLs" or "cURL."
  * echo
  * file   : Show the type of the file
- * history: shows all command u typed from the start
+ * find   : Search file/directory in a directory (find 'name of dir' -name 'name of file/dir')  
+ * history: shows all command u typedfilefile bana from the start
+ * less   : Shows you large files
  * ls
  * ls -a  : all files
  * ls -l  : ordered files
  * ls -al : all files ordered
+ * man    : Gives u all info about a command 
  * mkdir
- * mv     : moves text from a place to another
+ * mkdir -p : Creating directories with subdirectories (mkdir nnn/lll/..)
+ * mv     : moves file to a directory / rename files/Directories
  * nano   :   File editor
  * PWD    : it outputs the current directory or the path of the directory you are currently in.
- * rm     :   Remove files
- * rm -rf * :Remove all files in your dir
+ * rm     :   Remove a file
+ * rm -r  : Remove a directory 
+ * rm -f  :  Force remove
  * rmdir  : Remove directories
  * sudo -i: simulates a full login, changes the environment to that of the root user, and starts a new shell session.
  * sudo su: only switches the user to root without simulating a full login. It preserves your current environment.
+ * tee    : It reads from the input and write to both standard output and one or more files simultaneously ($ ls | tee peanuts.txt)
  * touch  : Creates  files
  * tree   : It displays the hierarchical structure of directories and files in a tree-like format. 
  * vi     :  File editor
  * uname -a: All details about ur linux kernel
+ * whatis : tells you what a command does
  
+ 
+ Text-Fu :
+ >      :  $ echo Hello World  peanuts.txt 
+ >>     :  $ echo Hello World >> peanuts.txt 
+ <  >   :  $ cat < peanuts.txt > banana.txt     $ ls < peanuts.txt > banana.txt
+ 2>     :  $ ls peanuts.txt 2> banana.txt : writes only stderr result to the file
+ 1>     :  $ ls peanuts.txt 1> banana.txt : writes only stdout result to the file
+ 2>&1   :  $ ls /fake/directory > peanuts.txt 2>&1 : wirtes both stderr and stdout in the file
+ |      :  The pipe operator |, represented by a vertical bar, allows us to get the stdout of a command and make that the stdin to another process.$ ls -la /etc | less 
+  
+  
