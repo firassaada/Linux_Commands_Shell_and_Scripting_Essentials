@@ -28,7 +28,7 @@ Linux commands :
  * less   : Shows you large files
  * ls
  * ls -a  : all files
- * ls -l  : ordered files
+ * ls -l  : ordered detailed  files
  * ls -al : all files ordered
  * man    : Gives u all info about a command 
  * mkdir
