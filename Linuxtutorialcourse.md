@@ -17,8 +17,8 @@ Linux commands :
  *apt     : Stands for "Advanced Package Tool" designed to simplify the process of installing,updating and managing software packages
  *Bc      : Calculator 
  * Cat    : Print file content
- * Cp     : Copying a file
- * $ cp -i: Check if a file/directory could be overwritten 
+ * cp     : Copying a file
+ * cp -i  : Check if a file/directory could be overwritten 
  * cp -r  : Copying a directory
  * curl   : it is a command-line tool and library for making HTTP requests. It stands for "Client for URLs" or "cURL."
  * echo
@@ -40,6 +40,7 @@ Linux commands :
  * rm -r  : Remove a directory 
  * rm -f  :  Force remove
  * rmdir  : Remove directories
+ * ssh    : The primary use of ssh is for remote login to a server or a computer. You can log in to a remote machine and have access to the command-line interface as     if you were physically present at that machine.
  * sudo -i: simulates a full login, changes the environment to that of the root user, and starts a new shell session.
  * sudo su: only switches the user to root without simulating a full login. It preserves your current environment.
  * tee    : It reads from the input and write to both standard output and one or more files simultaneously ($ ls | tee peanuts.txt)
