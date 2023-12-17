@@ -21,9 +21,16 @@ Linux commands :
  * cp -i  : Check if a file/directory could be overwritten 
  * cp -r  : Copying a directory
  * curl   : it is a command-line tool and library for making HTTP requests. It stands for "Client for URLs" or "cURL."
+ * cut    : It extracts portions of text from a file. 
+ * cut -c : To extract contents by a list of characters
+ * cut -f : The -f or field flag cuts text based off of fields, by default it uses TABs as delimiters
+ * cut -f -d : U specify delimeters (ex -d ';')
  * echo
  * file   : Show the type of the file
- * find   : Search file/directory in a directory (find 'name of dir' -name 'name of file/dir')  
+ * find   : Search file/directory in a directory (find 'name of dir' -name 'name of file/dir')
+ * join   : It allows you to join multiple files together in one file  by a common field
+ * head   : the head command will show you the first 10 lines in a file.
+ * head -n : it specifies the nbr of lines to show 
  * history: shows all command u typedfilefile bana from the start
  * less   : Shows you large files
  * ls
@@ -35,14 +42,22 @@ Linux commands :
  * mkdir -p : Creating directories with subdirectories (mkdir nnn/lll/..)
  * mv     : moves file to a directory / rename files/Directories
  * nano   :   File editor
- * PWD    : it outputs the current directory or the path of the directory you are currently in.
+ * paste -s : It merges the lines of a file into one line(with TAB delimeter)
+ * paste -s -d : Yopu specify the delimeter(Ex : -d ' ')
+ * pwd    : it outputs the current directory or the path of the directory you are currently in.
  * rm     :   Remove a file
  * rm -r  : Remove a directory 
  * rm -f  :  Force remove
  * rmdir  : Remove directories
+ * sort   :  It sort lines/files/dirs.. by alpha order(num then alpha 2 3 a b ..)
+ * sort -r: reverse sorting
+ * sort -n: alpha then num(a b 1 2 ...)
  * ssh    : The primary use of ssh is for remote login to a server or a computer. You can log in to a remote machine and have access to the command-line interface as     if you were physically present at that machine.
  * sudo -i: simulates a full login, changes the environment to that of the root user, and starts a new shell session.
  * sudo su: only switches the user to root without simulating a full login. It preserves your current environment.
+ * tail   : it will show you the last 10 lines in a file.
+ * tail -n: it specifies the nbr of lines to show
+ * tail -f: you can see everything that is getting added to that file.(ex : tail -f syslog )
  * tee    : It reads from the input and write to both standard output and one or more files simultaneously ($ ls | tee peanuts.txt)
  * touch  : Creates  files
  * tree   : It displays the hierarchical structure of directories and files in a tree-like format. 
