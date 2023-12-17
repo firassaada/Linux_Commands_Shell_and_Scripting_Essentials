@@ -28,6 +28,7 @@ Linux commands :
  * echo
  * file   : Show the type of the file
  * find   : Search file/directory in a directory (find 'name of dir' -name 'name of file/dir')
+ * grep   : It grep allows you to search files for characters that match a certain pattern 
  * join   : It allows you to join multiple files together in one file  by a common field
  * head   : the head command will show you the first 10 lines in a file.
  * head -n : it specifies the nbr of lines to show 
@@ -42,6 +43,7 @@ Linux commands :
  * mkdir -p : Creating directories with subdirectories (mkdir nnn/lll/..)
  * mv     : moves file to a directory / rename files/Directories
  * nano   :   File editor
+ * nl     : enumerates the lines in a file
  * paste -s : It merges the lines of a file into one line(with TAB delimeter)
  * paste -s -d : Yopu specify the delimeter(Ex : -d ' ')
  * pwd    : it outputs the current directory or the path of the directory you are currently in.
@@ -63,10 +65,15 @@ Linux commands :
  * tree   : It displays the hierarchical structure of directories and files in a tree-like format. 
  * vi     :  File editor
  * uname -a: All details about ur linux kernel
+ * wc     : counts the nbr of lines ,words and bytes in a file
  * whatis : tells you what a command does
+
  
  
  Text-Fu :
+ ^      : Specifies beginng of a line
+ $      : Specifies the end of a line
+[]      : Specifies a character (Ex grep j[a-n][h]n f2 : taatik john)
  >      :  $ echo Hello World  peanuts.txt 
  >>     :  $ echo Hello World >> peanuts.txt 
  <  >   :  $ cat < peanuts.txt > banana.txt     $ ls < peanuts.txt > banana.txt
