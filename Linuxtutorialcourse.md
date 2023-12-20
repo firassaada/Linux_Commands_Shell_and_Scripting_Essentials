@@ -76,10 +76,10 @@ Linux commands :
  * uniq -c: Shows the number of duplications 
  * uniq -d: Shows duplicated attributes
  * uniq -u: Shows unique attributes
- * 
  * vi     :  File editor
  * wc     : counts the nbr of lines ,words and bytes in a file
  * whatis : tells you what a command does
+ * Zip -r : Creates a zip file(ex: zip -r newzip.zip dir_to_be_zipped)  
 
  
  
