@@ -143,3 +143,18 @@ Linux commands :
      2-Group password - there isn't a need to set a group password, using an elevated privilege like sudo is standard. A "*" will be put in place as the default value.
      3-Group ID (GID)
      4-List of users - you can manually specify users you want in a specific group
+
+
+
+Openssl :
+openssl -enc <alg>  < f.txt  > f.enc      : encrypter f.txt dans f.enc
+openssl -enc <alg>  < f.enc  -d > f.txt   : decrypter f.enc dans f.txt
+openssl genrsa > cle 4092                 : generating private rsa key in 'cle'
+openssl rsa -pubout < cle > cle.pub       : generating pub rsa key in 'cle.pub'
+openssl rsa < cle -des3- > cle            : Add a pswd to access the keys
+openssl pkeyutl -encrypt -pubin -inkey cle.pub < fichier.txt > fichier.enc : encrypter fichier.txt avec le pub key created
+openssl pkeyutl -decrypt -inkey cle < fichier.enc >  fichier.txt           : Decrypter .......
+openssl pkeyutl –sign –inkey cle < fichier.txt > fichier.sign              : Signer le fichier.txt avec le cle privée 
+openssl pkeyutl –verify –pubin –inkey cle.pub < fichier.txt –sigfile fichier.sign : Verifier la signature du fichier avec la cle publique
+
+
