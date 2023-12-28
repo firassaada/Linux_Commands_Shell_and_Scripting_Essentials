@@ -47,6 +47,8 @@ Linux commands :
  * mv     : moves file to a directory / rename files/Directories
  * nano   :   File editor
  * nl     : enumerates the lines in a file
+ * Openssl enc : Chiffrement des fichiers
+ * Openssl enc -d : Dechiffrement des fichiers 
  * paste -s : It merges the lines of a file into one line(with TAB delimeter)
  * paste -s -d : Yopu specify the delimeter(Ex : -d ' ')
  * pwd    : it outputs the current directory or the path of the directory you are currently in.
