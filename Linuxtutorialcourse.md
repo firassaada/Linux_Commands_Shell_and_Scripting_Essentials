@@ -27,6 +27,7 @@ Linux commands :
  * cut -c : To extract contents by a list of characters
  * cut -f : The -f or field flag cuts text based off of fields, by default it uses TABs as delimiters
  * cut -f -d : U specify delimeters (ex -d ';')
+ * diff   : shows the  diff between two files(diff f1 f2)
  * echo
  * file   : Show the type of the file
  * find   : Search file/directory in a directory (find 'name of dir' -name 'name of file/dir')
@@ -147,14 +148,19 @@ Linux commands :
 
 
 Openssl :
+OpenSSL is a robust, open-source implementation of the SSL (Secure Sockets Layer) and TLS (Transport Layer Security) protocols :
+OPENSSL enc -base64 < file                           : Encode the file in base64(binary-to-text scheme)
 openssl -enc <alg>  < f.txt  > f.enc      : encrypter f.txt dans f.enc
+openssl -enc -a <alg>  < f.txt  > f.enc      : encrypter f.txt dans f.enc avec base64 encoding
 openssl -enc <alg>  < f.enc  -d > f.txt   : decrypter f.enc dans f.txt
+openssl dgst <fnc_de_hashage> file        : hasher file avec la fnc de hashage
 openssl genrsa > cle 4092                 : generating private rsa key in 'cle'
-openssl rsa -pubout < cle > cle.pub       : generating pub rsa key in 'cle.pub'
-openssl rsa < cle -des3- > cle            : Add a pswd to access the keys
+openssl passwd -6                         : encrypt a password with sha512 with a salt .
 openssl pkeyutl -encrypt -pubin -inkey cle.pub < fichier.txt > fichier.enc : encrypter fichier.txt avec le pub key created
 openssl pkeyutl -decrypt -inkey cle < fichier.enc >  fichier.txt           : Decrypter .......
 openssl pkeyutl –sign –inkey cle < fichier.txt > fichier.sign              : Signer le fichier.txt avec le cle privée 
 openssl pkeyutl –verify –pubin –inkey cle.pub < fichier.txt –sigfile fichier.sign : Verifier la signature du fichier avec la cle publique
-
+openssl rsa -pubout < cle > cle.pub       : generating pub rsa key in 'cle.pub'
+openssl rsa < cle -des3 > cle            : Add a pswd to access the keys
+openssl s_client siteweb:port             :A way to inspect the SSL/TLS handshake process and verify that the server's certificate is valid.
 
