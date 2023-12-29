@@ -29,9 +29,11 @@ Linux commands :
  * cut -f -d : U specify delimeters (ex -d ';')
  * diff   : shows the  diff between two files(diff f1 f2)
  * echo
+ * fallocate : It reserves space on disk for a file before actually writing any data to the file.
+ * fallocate -l : type the size u want to allocate fr the file
  * file   : Show the type of the file
  * find   : Search file/directory in a directory (find 'name of dir' -name 'name of file/dir')
- * grep   : It allows you to search files for characters that match a certain pattern
+ * grep   : It search files for characters that match a certain pattern(ex:grep "hey" test.txt)
  * grep -i: It allows you to search with the case insensitive property
  * join   : It allows you to join multiple files together in one file  by a common field
  * head   : the head command will show you the first 10 lines in a file.
@@ -57,6 +59,7 @@ Linux commands :
  * rm -r  : Remove a directory 
  * rm -f  :  Force remove
  * rmdir  : Remove directories
+ * scp    : Copies a local file to a remote server using ssh(scp localfile.txt username@hostname:/path/on/server)
  * sort   :  It sort lines/files/dirs.. by alpha order(num then alpha 2 3 a b ..)
  * sort -r: reverse sorting
  * sort -n: alpha then num(a b 1 2 ...)
@@ -163,4 +166,8 @@ openssl pkeyutl –verify –pubin –inkey cle.pub < fichier.txt –sigfile fic
 openssl rsa -pubout < cle > cle.pub       : generating pub rsa key in 'cle.pub'
 openssl rsa < cle -des3 > cle            : Add a pswd to access the keys
 openssl s_client siteweb:port             :A way to inspect the SSL/TLS handshake process and verify that the server's certificate is valid.
+PKI :
+* openssl req -new -x509 -days 3650 -key 'priv key file' > certif.aut : Creation d'un certif de type x509
+* openssl req -new -key 'prv.key' > demande.req
+
 
