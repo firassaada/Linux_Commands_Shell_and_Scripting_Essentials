@@ -14,6 +14,7 @@ Linux basic concepts :
 -U can monitor processes
 
 Linux commands :
+ * alias  : Used to create an alias(shortcut) for a command (ex : alias foobar='ls -la' )
  * apt    : Stands for "Advanced Package Tool" designed to simplify the process of installing,updating and managing software packages
  * base64 : Base64 is a binary-to-text encoding scheme that is used to encode binary/text data, such as images, audio, or other binary files, into a plain text format.
  * base64 -d: This would decode the encoded string back to the original type of data 
