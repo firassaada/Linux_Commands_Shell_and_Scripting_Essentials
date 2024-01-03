@@ -34,19 +34,19 @@ Linux commands :
  * fallocate -l : type the size u want to allocate fr the file
  * file   : Show the type of the file
  * find   : Search file/directory in a directory (find 'name of dir' -name 'name of file/dir')
- * grep   : It search files for characters that match a certain pattern(ex:grep "hey" test.txt)
+ * grep   : It search characters in files that match a certain pattern(ex:grep "hey" test.txt)
  * grep -i: It allows you to search with the case insensitive property
- * join   : It allows you to join multiple files together in one file  by a common field
+ * join   : It allows you to join multiple files together in one file  by a common field(ex: join -1 1 -2 1 f1 f2 : It says that f1&f2 will be joined by theeir first field))
  * head   : the head command will show you the first 10 lines in a file.
  * head -n : it specifies the nbr of lines to show 
- * history: shows all command u typedfilefile bana from the start
+ * history: shows all command u typed  from the start
  * less   : Shows you large files
  * ls
  * ls -a  : all files
  * ls -l  : ordered detailed  files
  * ls -al : all files ordered
  * man    : Gives u all info about a command 
- * mkdir
+ * mkdir  : Creates a directory 
  * mkdir -p : Creating directories with subdirectories (mkdir nnn/lll/..)
  * mv     : moves file to a directory / rename files/Directories
  * nano   :   File editor
@@ -61,7 +61,7 @@ Linux commands :
  * rm -f  :  Force remove
  * rmdir  : Remove directories
  * scp    : Copies a local file to a remote server using ssh(scp localfile.txt username@hostname:/path/on/server)
- * sort   :  It sort lines/files/dirs.. by alpha order(num then alpha 2 3 a b ..)
+ * sort   :  It sort lines/files/dirs.. by alpha order(num then alpha 2 3 a b ..) (ex : ls -ll |sort )
  * sort -r: reverse sorting
  * sort -n: alpha then num(a b 1 2 ...)
  * ssh    : The primary use of ssh is for remote login to a server or a computer. You can log in to a remote machine and have access to the command-line interface as     if  you were physically present at that machine.
@@ -76,8 +76,8 @@ Linux commands :
  * tail -f: you can see everything that is getting added to that file.(ex : tail -f syslog )
  * tee    : It reads from the input and write to both standard output and one or more files simultaneously ($ ls | tee peanuts.txt)
  * touch  : Creates  files
- * tr     : It allows you to translate a set of characters into another set of characters. 
- * tree   : It displays the hierarchical structure of directories and files in a tree-like format. 
+ * tr     : It allows you to translate a set of characters into another set of characters.(cat f1 | tr 'a-z' 'A-Z' 
+ * tree   : It displays t he hierarchical structure of directories and files in a tree-like format. 
  * uname -a: All details about ur linux kernel
  * uniq   : It removes duplicate lines that are ADJACENT in a file
  * uniq -c: Shows the number of duplications 
