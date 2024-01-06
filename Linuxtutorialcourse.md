@@ -41,6 +41,8 @@ Linux commands :
  * head -n : it specifies the nbr of lines to show 
  * history: shows all command u typed  from the start
  * less   : Shows you large files
+ * locate : Quickly locates files and directories by name, using a pre-built database.(ex :locate 'note')
+ * locate -i :-i désactive la sensibilité à la casse,permet de rechercher un fichier sans savoir son nom exact.
  * ls
  * ls -a  : all files
  * ls -l  : ordered detailed  files
