@@ -172,5 +172,6 @@ openssl s_client siteweb:port             :A way to inspect the SSL/TLS handshak
 PKI :
 * openssl req -new -x509 -days 3650 -key 'priv key file' > certif.aut : Creation d'un certif de type x509
 * openssl req -new -key 'prv.key' > demande.req
+* openssl pkeyutl -derive -inkey 'privclient.key' -peer 'pubserv.key' > 'serv_cli.key' : Creates a common key between the server and the client to connect
 
 
