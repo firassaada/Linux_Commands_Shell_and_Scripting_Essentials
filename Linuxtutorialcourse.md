@@ -38,7 +38,9 @@ Linux commands :
  * grep -i: It allows you to search with the case insensitive property
  * join   : It allows you to join multiple files together in one file  by a common field(ex: join -1 1 -2 1 f1 f2 : It says that f1&f2 will be joined by theeir first field))
  * head   : the head command will show you the first 10 lines in a file.
- * head -n : it specifies the nbr of lines to show 
+ * head -n : it specifies the nbr of lines to show
+ * hostname : Name of the host machine
+ * hostname -i : The ip address of the host machine
  * history: shows all command u typed  from the start
  * less   : Shows you large files
  * locate : Quickly locates files and directories by name, using a pre-built database.(ex :locate 'note')
