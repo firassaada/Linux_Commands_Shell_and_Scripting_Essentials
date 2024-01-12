@@ -95,6 +95,7 @@ Linux commands :
  
  
  Symbols  :
+TAB     : Shows the expected commands 
  ^      : Specifies beginng of a line
  $      : Specifies the end of a line
 []      : Specifies a character (Ex grep j[a-n][h]n f2 : taatik john)
@@ -121,6 +122,7 @@ Linux commands :
  y - yank or copy whatever is selected
  yy - yank or copy the current line
  p - paste the copied text before the cursor
+ :sav : saving new file (:sav f1.txt)
 
  *User Mangement :
  /etc/passwd  : This file shows you a list of users and detailed information about them. 
