@@ -17,7 +17,8 @@ Linux commands :
  * alias  : Used to create an alias(shortcut) for a command (ex : alias foobar='ls -la' )
  * apt    : Stands for "Advanced Package Tool" designed to simplify the process of installing,updating and managing software packages
  * base64 : Base64 is a binary-to-text encoding scheme that is used to encode binary/text data, such as images, audio, or other binary files, into a plain text format.
- * base64 -d: This would decode the encoded string back to the original type of data 
+ * base64 -d: This would decode the encoded string back to the original type of data
+ * Bash   : Command that executes the content of the file like a shell script 
  * Bc     : Calculator 
  * Cat    : Print file content
  * cp     : Copying a file
@@ -122,7 +123,11 @@ TAB     : Shows the expected commands
  y - yank or copy whatever is selected
  yy - yank or copy the current line
  p - paste the copied text before the cursor
- :sav : saving new file (:sav f1.txt)
+ :i     : Insert in the file
+ :q!    : Quit without saving 
+ :sav   : saving new file (:sav f1.txt)
+ :w     : Write to the file(save)
+ :wq    : Quit with saving 
 
  *User Mangement :
  /etc/passwd  : This file shows you a list of users and detailed information about them. 
