@@ -1,0 +1,31 @@
+*Linux core system
+*Text editors :
+  -VIM
+  -Nano
+*Packet managers : 
+  -RPM (Red Hat Package Manager) and DEB (Debian Package) are two different package management systems used in various Linux distributions to package, distribute, and install software. These package formats are used to bundle software, including its binaries, libraries, documentation, and metadata, into a single file for easy distribution and installation.
+
+  -Deb :(For ubuntu)
+  The dpkg command is used for low-level package management, while apt and apt-get provide higher-level package management          with dependency resolution.
+	# Install a DEB package
+	dpkg -i package.deb
+
+	# Install with apt
+	apt install package
+
+	# Install with apt-get
+	apt-get install package
+        Deb uses apt while rpm uses yum 
+
+*Shell: 
+ -A shell is a command-line interface that allows users to interact with the operating system.
+*Bash (Bourne Again SHell):
+ -Bash is a specific shell, one of the most widely used on Unix-like operating systems, including Linux.
+
+*rw-r--r--
+
+-The first three characters (rw-) define the user permissions, the next three (r--) the group pemissions, and the final three (r--) the other permissions.
+
+*ZIP vs TAR :
+-zip -r  : compress then bundle
+-tar -czf: bundle then compress
