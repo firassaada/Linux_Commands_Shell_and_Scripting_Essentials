@@ -15,26 +15,33 @@ Linux basic concepts :
 
 Linux commands :
  * alias  : Used to create an alias(shortcut) for a command (ex : alias foobar='ls -la' )
+ * alien  : A command used to convert package files between deb and RPM formats
  * apt    : Stands for "Advanced Package Tool" designed to simplify the process of installing,updating and managing software packages
  * base64 : Base64 is a binary-to-text encoding scheme that is used to encode binary/text data, such as images, audio, or other binary files, into a plain text format.
  * base64 -d: This would decode the encoded string back to the original type of data
- * Bash   : Command that executes the content of the file like a shell script 
- * Bc     : Calculator 
- * Cat    : Print file content
+ * bash   : Command that executes the content of the file like a shell script 
+ * bc     : Calculator 
+ * cat    : Print file content
+ * chmod  : Modify file permissions
+ * chmod (u/g/o)+(r/w/x)   : Adds   rwx perms to    user/group/other perms
+ * chmod (u/g/o)-(r/w/x)   : Revoke rwx perms from  user/group/other perms
  * cp     : Copying a file
  * cp -i  : Check if a file/directory could be overwritten 
  * cp -r  : Copying a directory
  * curl   : it is a command-line tool and library for making HTTP requests. It stands for "Client for URLs" or "cURL."
  * cut    : It extracts portions of text from a file. 
- * cut -c : To extract contents by a list of characters
- * cut -f : The -f or field flag cuts text based off of fields, by default it uses TABs as delimiters
- * cut -f -d : U specify delimeters (ex -d ';')
+ * cut -c : To extract contents by a list of characters(ex : cut -c1-5 f1 , show the first 5 characters from each line of f1)
+ * cut -c-:(cut -c2 f1 shows second character of each lin ,cut -c2- f1 shows all characters from each line starting with the second char) 
+ *  cut -f : The -f or field flag cuts text based off of fields, by default it uses TABs as delimiters
+ * cut -f -d : U specify delimeters (ex -d ';' -f2 file1 , gives you the seconf field of each line of f2 after space )
+ * date   : Shows the present date
  * diff   : shows the  diff between two files(diff f1 f2)
  * echo
+ * echo -e: Used to interpret \n(ex : echo -e '1 \n 2') 
  * fallocate : It reserves space on disk for a file before actually writing any data to the file.
  * fallocate -l : type the size u want to allocate fr the file
  * file   : Show the type of the file
- * find   : Search file/directory in a directory (find 'name of dir' -name 'name of file/dir')
+ * find   : Search file/directory in a directory (find 'name of dir' -name 'name of file/dir' . Ex : find . -iname f1)
  * grep   : It search characters in files that match a certain pattern(ex:grep "hey" test.txt)
  * grep -i: It allows you to search with the case insensitive property
  * join   : It allows you to join multiple files together in one file  by a common field(ex: join -1 1 -2 1 f1 f2 : It says that f1&f2 will be joined by theeir first field))
@@ -53,14 +60,18 @@ Linux commands :
  * man    : Gives u all info about a command 
  * mkdir  : Creates a directory 
  * mkdir -p : Creating directories with subdirectories (mkdir nnn/lll/..)
+ * less   : Shows you large files
  * mv     : moves file to a directory / rename files/Directories
  * nano   :   File editor
  * nl     : enumerates the lines in a file
  * Openssl enc : Chiffrement des fichiers
  * Openssl enc -d : Dechiffrement des fichiers 
- * paste -s : It merges the lines of a file into one line(with TAB delimeter)
+ * paste -s : It merges the lines of a file into one line(with TAB delimeter)(ex : paste -s name.txt lastname.txt age.txt)
  * paste -s -d : Yopu specify the delimeter(Ex : -d ' ')
  * pwd    : it outputs the current directory or the path of the directory you are currently in.
+ * printenv : It is used to display the values of environment variables. (ex : printenv USER)
+ * ps     : Shows the current running processes with the current user
+ * ps -e  : Shows all process on system regardless of the current user
  * rm     :   Remove a file
  * rm -r  : Remove a directory 
  * rm -f  :  Force remove
@@ -74,13 +85,23 @@ Linux commands :
  * sudo   : used to run a single command with root privileges,  
  * sudo -i: simulates a full login, changes the environment to that of the root user, and starts a new shell session.
  * sudo su: only switches the user to root without simulating a full login. It preserves your current environment.
+ * sudo apt update  : Fetch and display up-to-date information about all upgradable packages
+ * sudo apt upgrade : Upgrade to the latest supported version of nano:
  * su
  * su -c
  * tail   : it will show you the last 10 lines in a file.
  * tail -n: it specifies the nbr of lines to show
  * tail -f: you can see everything that is getting added to that file.(ex : tail -f syslog )
+ * tar    : Used tp create/extract and modify archive files
+ * tar -cvf: Create an archive file(ex : tar -cf dir.tar dir)
+ * tar -czf : Create a comprimized archive file(ex : tar -czf dir.tar.zg dir)
+ * tar -tvf: Used to list the content of an archive file(ex: tar -tf dir.tar)
+ * tar -xvf: Exports the content of the archive file (tar -xf dir.tar)(if dir was deleted , it will be backed up again)
+ * tar -xzf   
  * tee    : It reads from the input and write to both standard output and one or more files simultaneously ($ ls | tee peanuts.txt)
- * touch  : Creates  files
+ * tldr   : similar to man but easier and more efficient
+ *  touch  : Creates  files
+ * top    : Shows ressource usage in RT(~~ Task manager)
  * tr     : It allows you to translate a set of characters into another set of characters.(cat f1 | tr 'a-z' 'A-Z' 
  * tree   : It displays t he hierarchical structure of directories and files in a tree-like format. 
  * uname -a: All details about ur linux kernel
@@ -90,13 +111,20 @@ Linux commands :
  * uniq -u: Shows unique attributes
  * vi     :  File editor
  * wc     : counts the nbr of lines ,words and bytes in a file
+ * wget   : Download file from url(wget https://example.com/file.zip)
  * whatis : tells you what a command does
- * Zip -r : Creates a zip file(ex: zip -r newzip.zip dir_to_be_zipped)  
+ * whoami : provides you with the username
+ * zip -r : Creates a zip file(ex: zip -r newzip.zip dir_to_be_zipped)
+ * unzip
 
  
  
  Symbols  :
-TAB     : Shows the expected commands 
+ TAB    : Shows the expected commands 
+ ~ 	    : home directory
+ / 	    : root directory
+ . 	    : present working directory
+ .. 	   : parent of present working directory
  ^      : Specifies beginng of a line
  $      : Specifies the end of a line
 []      : Specifies a character (Ex grep j[a-n][h]n f2 : taatik john)
