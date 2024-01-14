@@ -37,7 +37,10 @@ Linux commands :
  * date   : Shows the present date
  * diff   : shows the  diff between two files(diff f1 f2)
  * echo
- * echo -e: Used to interpret \n(ex : echo -e '1 \n 2') 
+ * echo -e: Used to interpret \n(ex : echo -e '1 \n 2')
+ * echo -n: It prevents the echo command from adding a newline character (\n) at the end of the output.
+ * env    : Lists all env variables
+ * export : export shell varibales to env variables(ex : export first  ,it makes first an env variable)
  * fallocate : It reserves space on disk for a file before actually writing any data to the file.
  * fallocate -l : type the size u want to allocate fr the file
  * file   : Show the type of the file
@@ -72,11 +75,13 @@ Linux commands :
  * printenv : It is used to display the values of environment variables. (ex : printenv USER)
  * ps     : Shows the current running processes with the current user
  * ps -e  : Shows all process on system regardless of the current user
+ * read   : Is used to read a user input from the standard input (usually the keyboard) and assign it to a variable(ex :read lastname )  
  * rm     :   Remove a file
  * rm -r  : Remove a directory 
  * rm -f  :  Force remove
  * rmdir  : Remove directories
  * scp    : Copies a local file to a remote server using ssh(scp localfile.txt username@hostname:/path/on/server)
+ * set    : Lists all shell variables 
  * sort   :  It sort lines/files/dirs.. by alpha order(num then alpha 2 3 a b ..) (ex : ls -ll |sort )
  * sort -r: reverse sorting
  * sort -n: alpha then num(a b 1 2 ...)
@@ -109,17 +114,20 @@ Linux commands :
  * uniq -c: Shows the number of duplications 
  * uniq -d: Shows duplicated attributes
  * uniq -u: Shows unique attributes
+ * unset  : Deletes a shell variable(ex : first="firas" ,then : unset first)
  * vi     :  File editor
  * wc     : counts the nbr of lines ,words and bytes in a file
  * wget   : Download file from url(wget https://example.com/file.zip)
  * whatis : tells you what a command does
  * whoami : provides you with the username
+ * which  : Is used to locate the executable file associated with a given command.(ex : which cat) 
  * zip -r : Creates a zip file(ex: zip -r newzip.zip dir_to_be_zipped)
  * unzip
 
  
  
  Symbols  :
+ =      :(first='firas', echo $first) It creates variables 
  TAB    : Shows the expected commands 
  ~ 	    : home directory
  / 	    : root directory
