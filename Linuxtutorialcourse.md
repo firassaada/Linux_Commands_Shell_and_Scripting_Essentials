@@ -127,6 +127,11 @@ Linux commands :
  
  
  Symbols  :
+ ''     : Interpret text literally(ex:'$floussi win' --> $floussi win )
+ ""     : It pays attention to special characters (ex:"$floussi win" -->  win)
+ \      : Escape unique character interpretation(ex:"\$floussi win"--> $floussi win)(ex:touch file\ with\ space.txt --> 'file with space.txt')
+ $(())  : You can perform integer addition, subtraction, multiplication, and division using the notation(ex : echo  $((3+2)))
+ ?      : It is used to represent a single character at a specific position in a filename or a pattern.(ex : ls file?.txt)
  ;      : Seperates commands (ex : mkdir mydir ; cd mydir ; touch myfile.txt ; ls )
  =      :(first='firas', echo $first) It creates variables 
  TAB    : Shows the expected commands 
@@ -137,13 +142,27 @@ Linux commands :
  ^      : Specifies beginng of a line
  $      : Specifies the end of a line
 []      : Specifies a character (Ex grep j[a-n][h]n f2 : taatik john)
- >      :  $ echo Hello World  peanuts.txt 
- >>     :  $ echo Hello World >> peanuts.txt 
+ >      :  echo Hello World > peanuts.txt (Overwrite the filewith the new datafrom input ) 
+ >>     :  echo Hello World >> peanuts.txt (Adds input data to the end of the file without overwrite)
  <  >   :  $ cat < peanuts.txt > banana.txt     $ ls < peanuts.txt > banana.txt
- 2>     :  $ ls peanuts.txt 2> banana.txt : writes only stderr result to the file
+ 2>     :  Writes only stderr(errors) result to the file (ex : ls peanuts.txt 2> banana.txt)
  1>     :  $ ls peanuts.txt 1> banana.txt : writes only stdout result to the file
  2>&1   :  $ ls /fake/directory > peanuts.txt 2>&1 : wirtes both stderr and stdout in the file
  |      :  The pipe operator |, represented by a vertical bar, allows us to get the stdout of a command and make that the stdin to another process.$ ls -la /etc | less 
+
+
+*Conditionals :
+-if :
+  if [ condition ] && [ condition ] 
+ then
+     statement_block_1  
+ else
+     statement_block_2  
+    fi
+  You must always put spaces around your condition within the square brackets [ ].
+  Every if condition block must be paired with a fi to tell Bash where the condition block ends.
+  The else block is optional but recommended.
+
  
 *Vim editor : 
  \      : find the word in the file(ex \pretty looks for pretty)
