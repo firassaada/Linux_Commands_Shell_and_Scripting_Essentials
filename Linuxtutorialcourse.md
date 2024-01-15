@@ -127,6 +127,7 @@ Linux commands :
  
  
  Symbols  :
+ ;      : Seperates commands (ex : mkdir mydir ; cd mydir ; touch myfile.txt ; ls )
  =      :(first='firas', echo $first) It creates variables 
  TAB    : Shows the expected commands 
  ~ 	    : home directory
