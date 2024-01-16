@@ -30,7 +30,7 @@ Linux commands :
  * cp -r  : Copying a directory
  * crontab: Crontab is a system utility in Unix that allows users to schedule jobs (commands or scripts) to run periodically at fixed times, dates, or intervals.
  * crontab -e:It opens the default text editor where u can schedule jobs (ex :# m h  dom mon dow   command 0 2 * * * /path/to/myscript.sh )
- * crontab -l:
+ * crontab -l:It used to view the current crontab entries  
  * curl   : it is a command-line tool and library for making HTTP requests. It stands for "Client for URLs" or "cURL."
  * cut    : It extracts portions of text from a file. 
  * cut -c : To extract contents by a list of characters(ex : cut -c1-5 f1 , show the first 5 characters from each line of f1)
