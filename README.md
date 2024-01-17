@@ -13,3 +13,4 @@ Feel free to explore, learn, and contribute. Whether you're a beginner or an exp
 # Badge Provided whith this course : 
     Linux_Commands_Shell_and_Scripting_Essentials :
 This badge earner has demonstrated a foundational knowledge of Linux commands and shell scripting. The individual can perform general-purpose, directory management, file management, access control commands, and networking commands. The badge earner has hands-on experience creating simple and advanced shell scripts and scheduling cron jobs using crontab. The earner knows the frequently used commands and shell scripting basics required to become a successful data engineer.
+![Alt text](FinalGrades.png)
