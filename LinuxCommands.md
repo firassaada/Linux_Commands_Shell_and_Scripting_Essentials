@@ -56,6 +56,7 @@ Linux commands :
  * hostname : Name of the host machine
  * hostname -i : The ip address of the host machine
  * history: shows all command u typed  from the start
+ * kill   : It is used to send signals to processes or to terminate processes(kill 1234 : kill process with id1234)
  * less   : Shows you large files
  * locate : Quickly locates files and directories by name, using a pre-built database.(ex :locate 'note')
  * locate -i :-i désactive la sensibilité à la casse,permet de rechercher un fichier sans savoir son nom exact.
@@ -71,7 +72,8 @@ Linux commands :
  * nano   :   File editor
  * nl     : enumerates the lines in a file
  * Openssl enc : Chiffrement des fichiers
- * Openssl enc -d : Dechiffrement des fichiers 
+ * Openssl enc -d : Dechiffrement des fichiers
+ * patch  : It is used to patch an old file with a new diff version (patch f1 < f2.diff : f2.diff is the result of diff f1 f2 for ex) 
  * paste -s : It merges the lines of a file into one line(with TAB delimeter)(ex : paste -s name.txt lastname.txt age.txt)
  * paste -s -d : Yopu specify the delimeter(Ex : -d ' ')
  * pwd    : it outputs the current directory or the path of the directory you are currently in.
@@ -88,7 +90,7 @@ Linux commands :
  * sort   :  It sort lines/files/dirs.. by alpha order(num then alpha 2 3 a b ..) (ex : ls -ll |sort )
  * sort -r: reverse sorting
  * sort -n: alpha then num(a b 1 2 ...)
- * ssh    : The primary use of ssh is for remote login to a server or a computer. You can log in to a remote machine and have access to the command-line interface as     if  you were physically present at that machine.
+ * ssh    : Used for remote login to a server or a computer.You can log in to a remote machine and have access to the CLI as if you were physically present at that machine.
  *strings : It is used to extract human-readable text strings from binary files.
  * sudo   : used to run a single command with root privileges,  
  * sudo -i: simulates a full login, changes the environment to that of the root user, and starts a new shell session.
